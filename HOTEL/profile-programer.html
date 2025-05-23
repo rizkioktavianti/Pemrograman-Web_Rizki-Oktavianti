@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Curriculum Vitae - Programmer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+      padding: 30px;
+    }
+
+    .cv-container {
+      max-width: 900px;
+      margin: auto;
+      background: #fff;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    .cv-header {
+      display: flex;
+      align-items: center;
+      border-bottom: 2px solid #0077cc;
+      padding-bottom: 20px;
+      margin-bottom: 30px;
+    }
+
+    .cv-header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin-right: 30px;
+      object-fit: cover;
+      border: 3px solid #0077cc;
+    }
+
+    .cv-header input[type="file"] {
+      display: block;
+      margin-top: 10px;
+    }
+
+    .cv-header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    .cv-header p {
+      margin: 5px 0;
+      color: #555;
+    }
+
+    .cv-section {
+      margin-bottom: 30px;
+    }
+
+    .cv-section h2 {
+      font-size: 20px;
+      color: #0077cc;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+    }
+
+    .cv-section ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .cv-section li {
+      margin-bottom: 10px;
+    }
+
+    .contact a {
+      text-decoration: none;
+      color: #0077cc;
+    }
+
+    .cv-footer {
+      text-align: center;
+      font-size: 14px;
+      color: #aaa;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      .cv-header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .cv-header img {
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cv-container">
+    <div class="cv-header">
+      <div>
+        <img id="profilePic" src="images/foto1.jpeg" alt="Foto Programmer" />
+        <input type="file" accept="image/*" onchange="loadPhoto(event)">
+      </div>
+      <div>
+        <h1>Rizki Oktavianti</h1>
+        <p>Mahasiawa & Karyawan swasta</p>
+        <p>Email: <a class="contact" href="mailto:rizkioktavianti996@gmail.com">rizkioktavianti996@gmial.com</a></p>
+        <p>Phone: +62 813 7828 3266</p>
+      </div>
+    </div>
+
+    <div class="cv-section">
+      <h2>Profile</h2>
+      <p> I am a six-semester student at the universitas Putera Batam with a deep interest in  pursuin a career ini System Information
+        .Particulary in Data Analyst. My goals is to combine my academic knowledge with practical field experience to become a skilled IT support professional who makes a significant contribution to the industry.</p>
+    </div>
+
+    <div class="cv-section">
+      <h2>Experience</h2>
+      <ul>
+        <li><strong>2019</strong> - Ticketing in Hawai Travel</li>
+        <li><strong>2019 - 2021</strong> - Promotor in PT. Duta Niaga Mandiri</li>
+        <li><strong>2021 - sekarang</strong> - Operator Production in PT. PCi</li>
+      </ul>
+    </div>
+
+    <div class="cv-section">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>2022 - sekarang</strong> - Mahasiswa S1 Sistem Informasi, Universitas Putera Batam</li>
+      </ul>
+    </div>
+
+    <div class="cv-section">
+      <h2>Skill</h2>
+      <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>React, Node.js, Laravel</li>
+        <li>Figma, Adobe XD, Figma</li>
+        <li>Git, GitHub</li>
+        <li>Ms Office, Marketing promotion</li>
+      </ul>
+    </div>
+
+    <div class="cv-section">
+      <h2>Sertifikasi</h2>
+      <ul>
+        <li>Full Stack Web Developer - Dicoding</li>
+        <li>UI/UX Design - Coursera</li>
+      </ul>
+    </div>
+
+    <div class="cv-footer">
+      © 2025 Rizki Oktavianti — All rights reserved.
+    </div>
+  </div>
+
+   <a href="more.html" class="back-btn">← Back</a>
+  <script>
+    function loadPhoto(event) {
+      const output = document.getElementById('profilePic');
+      output.src = URL.createObjectURL(event.target.files[0]);
+      output.onload = () => URL.revokeObjectURL(output.src); // memory cleanup
+    }
+  </script>
+
+</body>
+</html>

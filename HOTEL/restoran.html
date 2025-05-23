@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Restoran Hotel Paradise</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #fff;
+      color: #fecd6c;
+    }
+
+    .restaurant-header {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #542201;
+    }
+
+    .restaurant-header h1 {
+      font-size: 2.8rem;
+      color: #f7a848;
+      margin-bottom: 10px;
+    }
+
+    .menu-section {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .menu-item {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 30px;
+      border-bottom: 1px solid #e0e0e0;
+      padding-bottom: 20px;
+    }
+
+    .menu-item img {
+      width: 250px;
+      height: 170px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .menu-description {
+      flex: 1;
+    }
+
+    .menu-description h2 {
+      font-size: 1.5rem;
+      margin: 0 0 10px;
+      color: #222;
+    }
+
+    .menu-description p {
+      margin: 0 0 10px;
+      color: #555;
+    }
+
+    .menu-price {
+      font-weight: bold;
+      color: #f5a623;
+      font-size: 1.2rem;
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin: 30px auto 0;
+      text-align: center;
+      background-color: #ffd369;
+      color: #222831;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-btn:hover {
+      background-color: #f5a623;
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      .menu-item {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .menu-item img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="restaurant-header">
+    <h1>Restoran Hotel Paradise</h1>
+    <p>Nikmati sajian khas Indonesia, Jepang, dan Barat terbaik kami</p>
+  </div>
+
+  <div class="menu-section">
+    <!-- Western Menus -->
+    <div class="menu-item">
+      <img src="images/steak.jpg" alt="Sirloin Steak">
+      <div class="menu-description">
+        <h2>Ribeye Steak</h2>
+        <p> a truly exceptional cut of beef revered for its rich, deeply satisfying flavor and incredibly tender texture.</p>
+        <div class="menu-price">Rp 420.000</div>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="images/cheeseburger.jpeg" alt="Cheeseburger">
+      <div class="menu-description">
+        <h2>Cheeseburger Deluxe</h2>
+        <p>Roti burger empuk dengan patty daging sapi, keju leleh, tomat, selada, dan saus spesial.</p>
+        <div class="menu-price">Rp 143.000</div>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="images/caesar-salad.jpg" alt="Caesar Salad">
+      <div class="menu-description">
+        <h2>Caesar Salad</h2>
+        <p>Salad segar dengan selada romaine, crouton, keju parmesan, dan dressing creamy.</p>
+        <div class="menu-price">Rp 105.000</div>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="images/fish-chips.jpg" alt="Fish and Chips">
+      <div class="menu-description">
+        <h2>Fish and Chips</h2>
+        <p>Fillet ikan krispi dengan kentang goreng, saus tartar, dan irisan lemon segar.</p>
+        <div class="menu-price">Rp 85.000</div>
+      </div>
+    </div>
+
+    <!-- Indonesian Menus -->
+    <div class="menu-item">
+      <img src="images/nasi-goreng.jpg" alt="Nasi Goreng">
+      <div class="menu-description">
+        <h2>Nasi Goreng Paradise</h2>
+        <p>Nasi goreng khas hotel dengan ayam suwir, telur mata sapi, dan kerupuk.</p>
+        <div class="menu-price">Rp 45.000</div>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="images/soto-ayam.jpg" alt="Soto Ayam">
+      <div class="menu-description">
+        <h2>Soto Ayam</h2>
+        <p>Sup ayam tradisional dengan kuah kunyit, bihun, telur rebus, dan sambal segar.</p>
+        <div class="menu-price">Rp 40.000</div>
+      </div>
+    </div>
+
+    <!-- Japanese Menus -->
+    <div class="menu-item">
+      <img src="images/sushi.jpg" alt="Sushi Roll">
+      <div class="menu-description">
+        <h2>California Sushi Roll</h2>
+        <p>Gulungan nasi dengan nori, kepiting, timun, dan alpukat, disajikan dengan kecap asin dan wasabi.</p>
+        <div class="menu-price">Rp 220.000</div>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="images/ramen.jpg" alt="Ramen">
+      <div class="menu-description">
+        <h2>Chicken Ramen</h2>
+        <p>Mi ramen dalam kuah kaldu ayam gurih dengan telur rebus, sayur, dan ayam panggang.</p>
+        <div class="menu-price">Rp 80.000</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="text-align:center;">
+    <a href="more.html" class="back-btn">← Back</a>
+  </div>
+
+</body>
+</html>

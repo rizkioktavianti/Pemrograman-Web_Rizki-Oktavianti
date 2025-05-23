@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Profil Hotel Paradise</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: auto;
+      overflow-x: hidden;
+      font-family: 'Poppins', sans-serif;
+      background-color: #000;
+      color: white;
+    }
+
+    .profile-hero {
+      min-height: 100vh;
+      background-image: url('images/profile-background.jpg'); /* Ganti dengan path gambar Anda */
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .profile-hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: 1;
+    }
+
+    .profile-content {
+      position: relative;
+      z-index: 2;
+      max-width: 850px;
+      margin: 0 auto;
+    }
+
+    .profile-content h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: #ffd369;
+    }
+
+    .profile-content p {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+      text-align: justify;
+    }
+
+    .back-btn {
+      display: inline-block;
+      background-color: #ffd369;
+      color: #222831;
+      padding: 12px 24px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-btn:hover {
+      background-color: #f5a623;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="profile-hero">
+    <div class="profile-content">
+      <h1>Profil Hotel Paradise</h1>
+
+      <p><strong>Hotel Paradise</strong> adalah tempat sempurna untuk berlibur dengan pemandangan alam yang menakjubkan dan fasilitas lengkap. Kami menyediakan kenyamanan dan layanan terbaik untuk membuat pengalaman Anda tak terlupakan. Terletak strategis di Batam, kawasan wisata <em>Pantai Nongsa</em>, Hotel Paradise hadir sebagai pilihan akomodasi ideal bagi pelancong bisnis, keluarga yang berlibur, atau pasangan yang mencari ketenangan.</p>
+
+      <p>Hotel ini menawarkan berbagai fasilitas modern yang dirancang untuk kenyamanan dan kemudahan Anda. Nikmati istirahat berkualitas di kamar-kamar luas bergaya kontemporer yang dilengkapi dengan tempat tidur nyaman, AC, TV layar datar, akses Wi-Fi gratis, dan kamar mandi dalam dengan perlengkapan mandi premium.</p>
+
+      <p>Untuk relaksasi dan rekreasi, Anda dapat menikmati kesegaran kolam renang infinity dengan pemandangan laut, menjaga kebugaran di pusat gym modern, atau memanjakan diri dengan berbagai perawatan di spa yang menenangkan.</p>
+
+      <p>Pengalaman kuliner yang tak terlupakan menanti Anda di restoran kami yang menyajikan hidangan lokal dan internasional. Tersedia sarapan prasmanan, santapan à la carte dengan cita rasa autentik, serta lounge nyaman untuk bersantai sambil menikmati minuman. Layanan kamar 24 jam siap memenuhi kebutuhan Anda.</p>
+
+      <p>Di Hotel Paradise, kami berkomitmen memberikan layanan istimewa yang akan membuat pengalaman menginap Anda berkesan. Tim concierge siap membantu mulai dari informasi wisata lokal hingga pengaturan transportasi. Tersedia juga fasilitas pertemuan bisnis, layanan laundry & dry cleaning, serta area parkir luas dan aman.</p>
+
+      <p><strong>Enjoy Your Experience!</strong></p>
+
+      <a href="more.html" class="back-btn">← Back</a>
+    </div>
+  </div>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>

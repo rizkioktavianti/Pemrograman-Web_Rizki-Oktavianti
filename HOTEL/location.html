@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Location - Hotel Paradise</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      background-color: #ffffff;
+    }
+
+    .sidebar {
+      width: 220px;
+      background-color: #aac8ff;
+      padding: 20px;
+      height: 100vh;
+      position: fixed;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar li {
+      margin-bottom: 20px;
+    }
+
+    .sidebar a {
+      text-decoration: none;
+      color: #000;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+    }
+
+    .sidebar i {
+      margin-right: 10px;
+    }
+
+    .content {
+      margin-left: 250px;
+      padding: 40px;
+      max-width: 900px;
+    }
+
+    .location-section {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      background-color: #f7f7f7;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+    }
+
+    .location-section img {
+      width: 50%;
+      height: auto;
+    }
+
+    .location-description {
+      padding: 30px;
+    }
+
+    .location-description h2 {
+      margin-top: 0;
+    }
+
+    .location-description p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .map-container {
+      width: 100%;
+      height: 400px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <nav class="sidebar">
+    <ul>
+      <li><a href="index.html"><i data-lucide="home"></i> Home</a></li>
+
+      <li class="has-submenu">
+        <a href="#" id="aboutToggle"><i data-lucide="info"></i> About Us</a>
+        <ul class="submenu" id="aboutSubmenu">
+          <li><a href="profile.html">Profil</a></li>
+          <li><a href="restoran.html">Restoran</a></li>
+          <li><a href="fasilitas.html">Fasilitas</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+      </li>
+
+      <li><a href="room.html"><i data-lucide="bed"></i> Room</a></li>
+      <li><a href="location.html"><i data-lucide="map-pin"></i> Location</a></li>
+      <li><a href="profile-programer.html"><i data-lucide="user"></i> Profil Programer</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="content">
+    <div class="location-section">
+      <img src="images/location.jpeg" alt="Hotel Location" />
+      <div class="location-description">
+        <h2>Our Location</h2>
+        <p>
+          Hotel Paradise is located on the beautiful beachfront in Bali, offering easy access to the airport,
+          shopping centers, and local tourist attractions. Our prime location ensures both convenience and relaxation.
+        </p>
+        <p>
+          📍 Jl. Pantai Indah No. 123, Bali, Indonesia<br/>
+          ☎️ +62 812 3456 7890
+        </p>
+      </div>
+    </div>
+
+    <!-- Map Embed -->
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.3794721925187!2d115.21834087421037!3d-8.672654491385348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd24726d826579f%3A0x3c0b5a56436a146f!2sKuta%20Beach!5e0!3m2!1sen!2sid!4v1715850000000!5m2!1sen!2sid"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+
+  <!-- Script -->
+  <script>
+    lucide.createIcons();
+
+    const toggleBtn = document.getElementById("aboutToggle");
+    const submenu = document.getElementById("aboutSubmenu");
+
+    toggleBtn.addEventListener("click", function (e) {
+      e.preventDefault();
+      submenu.style.display = submenu.style.display === "block" ? "none" : "block";
+    });
+
+    document.addEventListener("click", function (e) {
+      if (!toggleBtn.contains(e.target) && !submenu.contains(e.target)) {
+        submenu.style.display = "none";
+      }
+    });
+  </script>
+</body>
+</html>

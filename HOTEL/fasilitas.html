@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fasilitas Hotel Paradise</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #fff;
+      color: #fecd6c;
+    }
+
+    .facility-header {
+      text-align: center;
+      padding: 50px 20px 20px;
+      background-color: #542201;
+    }
+
+    .facility-header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+      color: #f7a848;
+    }
+
+    .facility-section {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    .facility-item {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      border-bottom: 1px solid #e0e0e0;
+      padding-bottom: 20px;
+    }
+
+    .facility-item img {
+      width: 280px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .facility-description {
+      flex: 1;
+    }
+
+    .facility-description h2 {
+      margin: 0 0 10px;
+      font-size: 1.5rem;
+      color: #222;
+    }
+
+    .facility-description p {
+      margin: 0 0 10px;
+      color: #555;
+    }
+
+    .facility-price {
+      font-weight: bold;
+      color: #f5a623;
+      font-size: 1.1rem;
+    }
+
+    .back-btn {
+      display: block;
+      text-align: center;
+      background-color: #ffd369;
+      color: #222831;
+      padding: 10px 20px;
+      margin: 40px auto 0;
+      text-decoration: none;
+      border-radius: 6px;
+      width: fit-content;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-btn:hover {
+      background-color: #f5a623;
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      .facility-item {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .facility-item img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="facility-header">
+    <h1>Fasilitas Hotel Paradise</h1>
+    <p>Fasilitas premium untuk kenyamanan dan pengalaman tak terlupakan</p>
+  </div>
+
+  <div class="facility-section">
+    <div class="facility-item">
+      <img src="images/pool.jpeg" alt="Infinity Pool" />
+      <div class="facility-description">
+        <h2>Infinity Pool</h2>
+        <p>Kolam renang luas dengan pemandangan laut yang memukau, cocok untuk relaksasi.</p>
+        <div class="facility-price">Gratis</div>
+      </div>
+    </div>
+
+    <div class="facility-item">
+      <img src="images/gym.jpg" alt="Gym Room" />
+      <div class="facility-description">
+        <h2>Gym Room</h2>
+        <p>Gym lengkap untuk menjaga kebugaran selama Anda menginap.</p>
+        <div class="facility-price">Gratis</div>
+      </div>
+    </div>
+
+    <div class="facility-item">
+      <img src="images/spa.jpg" alt="Spa & Relaksasi" />
+      <div class="facility-description">
+        <h2>Spa & Relaksasi</h2>
+        <p>Perawatan spa profesional untuk menyegarkan tubuh dan pikiran Anda.</p>
+        <div class="facility-price">Start From Rp 250.000 / sesi</div>
+      </div>
+    </div>
+
+    <div class="facility-item">
+      <img src="images/meeting-room.jpg" alt="Ruang Meeting" />
+      <div class="facility-description">
+        <h2>Meeting Room</h2>
+        <p>Fasilitas ruang rapat dengan perlengkapan lengkap dan nyaman.</p>
+        <div class="facility-price">Rp 500.000 / jam</div>
+      </div>
+    </div>
+
+    <div class="facility-item">
+      <img src="images/laundry.jpg" alt="Laundry Room" />
+      <div class="facility-description">
+        <h2>Laundry Room</h2>
+        <p>Laundry express dengan layanan penjemputan dari kamar.</p>
+        <div class="facility-price">Mulai Rp 15.000 / kg</div>
+      </div>
+    </div>
+
+    <div class="facility-item">
+      <img src="images/shuttle.jpg" alt="Shuttle Bandara" />
+      <div class="facility-description">
+        <h2>Shuttle Bandara</h2>
+        <p>Layanan antar jemput dari dan ke bandara dengan kendaraan nyaman.</p>
+        <div class="facility-price">Rp 100.000 / perjalanan</div>
+      </div>
+    </div>
+
+    <div class="facility-item">
+      <img src="images/playground.jpg" alt="Playground Anak" />
+      <div class="facility-description">
+        <h2>Playground Anak</h2>
+        <p>Area bermain anak yang aman dan menyenangkan di lingkungan hotel.</p>
+        <div class="facility-price">Gratis</div>
+      </div>
+    </div>
+
+    <div class="facility-item">
+      <img src="images/bike.jpeg" alt="Rental Sepeda" />
+      <div class="facility-description">
+        <h2>Rental Sepeda</h2>
+        <p>Sewa sepeda untuk menjelajahi lingkungan sekitar hotel dengan santai.</p>
+        <div class="facility-price">Rp 50.000 / jam</div>
+      </div>
+    </div>
+
+    <div class="facility-item">
+      <img src="images/golf.jpg" alt="golf" />
+      <div class="facility-description">
+        <h2>Golf</h2>
+        <p>Bermain Golf dengan hamparan lahan hijau yang luas dan mneyejuk kan.</p>
+        <div class="facility-price">Rp. 550.000 / Sesi</div>
+      </div>
+    </div>
+
+    <div class="facility-item">
+      <img src="images/restaurant.jfif" alt="Restoran & Lounge" />
+      <div class="facility-description">
+        <h2>Restoran & Lounge</h2>
+        <p>Nikmati hidangan lokal dan internasional dalam suasana elegan.</p>
+        <div class="facility-price">Harga sesuai menu</div>
+      </div>
+    </div>
+  </div>
+
+  <a href="more.html" class="back-btn">← Back</a>
+
+</body>
+</html>

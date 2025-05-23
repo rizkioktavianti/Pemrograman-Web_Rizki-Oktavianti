@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>More - Hotel Paradise</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sidebar Navbar -->
+  <nav class="sidebar">
+    <ul>
+      <li><a href="index.html"><i data-lucide="home"></i> Home</a></li>
+
+      <li class="has-submenu">
+        <a href="#" id="aboutToggle"><i data-lucide="info"></i> About Us</a>
+        <ul class="submenu" id="aboutSubmenu">
+          <li><a href="profile.html">Profil</a></li>
+          <li><a href="restoran.html">Restoran</a></li>
+          <li><a href="fasilitas.html">Fasilitas</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+      </li>
+
+      <li><a href="room.html"><i data-lucide="bed"></i> Room</a></li>
+      <li><a href="location.html"><i data-lucide="map-pin"></i> Location</a></li>
+      <li><a href="profile-programer.html"><i data-lucide="user"></i> Profil Programer</a></li>
+    </ul>
+  </nav>
+
+  <!-- Background Section -->
+  <div class="more-hero">
+    <div class="more-content">
+      <h1>More About Hotel Paradise</h1>
+      <p>Welcome to best experience!</p>
+      <a href="index.html" class="back-btn">← Back to Home</a>
+    </div>
+  </div>
+
+
+  <!-- Script Section -->
+  <script>
+    lucide.createIcons();
+
+    // Toggle submenu on click
+    const toggleBtn = document.getElementById("aboutToggle");
+    const submenu = document.getElementById("aboutSubmenu");
+
+    toggleBtn.addEventListener("click", function (e) {
+      e.preventDefault();
+      submenu.style.display = submenu.style.display === "block" ? "none" : "block";
+    });
+
+    // Close submenu if clicking outside
+    document.addEventListener("click", function (e) {
+      if (!toggleBtn.contains(e.target) && !submenu.contains(e.target)) {
+        submenu.style.display = "none";
+      }
+    });
+  </script>
+
+</body>
+</html>
